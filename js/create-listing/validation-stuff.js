@@ -164,13 +164,62 @@ $('#multisteps-form-5').submit(validateAll)
 
 
 
-
+function failedToSaveSwal(){
+    Swal.fire({
+        title: "Error",
+        text: "Failed to save. Please try again",
+        icon: "error",
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        width: 300,
+        timer: 5000,
+        padding: "0.5em"
+    });
+}
 
 function showLoadingSwal() {
 
-    new swal({
+    savingAlert =  new swal({
         title: "Saving...",
         icon: "info",
+        toast: true,
+        position: 'top-end',
+        timerProgressBar: true,
+        showConfirmButton: false,
+        width: 200,
+        timer:10000,
+        
+        padding: "0.5em",
+
+    })
+}
+
+function stillLoading(){
+    stillLoadingVar = setTimeout(() => {
+        if (savingAlert && Swal.isVisible()) {
+            Swal.close();
+            Swal.fire({
+                text: "The request is taking too long. Please check your connection.",
+                icon: "warning",
+                toast: true,
+                position: 'top-end',
+                timerProgressBar: true,
+                showConfirmButton: false,
+                width: 400,
+                timer: 6000,
+                padding: "0.5em"
+            });
+        }
+    }, 10000);
+}
+
+
+function unableToReachSwal() {
+
+    new swal({
+        title: "Unable to connect",
+        icon: "error",
         toast: true,
         position: 'top-end',
         timerProgressBar: true,
@@ -184,16 +233,16 @@ function showLoadingSwal() {
 
 
 function showSuccessSwal() {
-
-
+    
     new swal({
         title: "Saved",
         icon: "success",
         toast: true,
         position: 'top-end',
+        timerProgressBar: true,
         showConfirmButton: false,
         width: 200,
-        timer: 2000,
+        timer: 4000,
         padding: "0.5em"
 
     })
