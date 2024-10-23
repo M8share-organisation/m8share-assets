@@ -1,213 +1,252 @@
 /* .bg-gray {
     background-color: #f0f2f5;
   } */
-  .fs-0 {
-    font-size: 4rem;
-  }
-  .fs-7 {
-    font-size: 0.8rem;
-  }
-  /* nav button */
-  .nav__btn button:hover {
-    background: #f0f2f5 !important;
-  }
-  .nav__btn button:hover i {
-    color: #0d6efd !important;
-  }
-  .nav__btn-active i {
-    color: #0d6efd !important;
-  }
-  .nav__btn-active {
-    position: relative;
-  }
-  .nav__btn-active:before {
-    content: "";
-    position: absolute;
-    bottom: -4.5px;
-    left: 0;
-    transform: translate(0, 4.5px);
-    width: 100%;
-    height: 3px;
-    border-bottom: 3px solid #0d6efd !important;
-  }
-  /* dropdown */
-  .dropdown-item:active {
-    background-color: #d5d5d5 !important;
-  }
-  /* chat box */
-  .modal-content:hover .fa-phone-alt {
-    color: #0d6efd !important;
-  }
-  .modal-content:hover .fa-video {
-    color: #0d6efd !important;
-  }
-  .modal-content:hover .fa-file-image {
-    color: #0d6efd !important;
-  }
-  .modal-content:hover .fa-plus-circle {
-    color: #0d6efd !important;
-  }
-  .modal-content:hover .fa-portrait {
-    color: #0d6efd !important;
-  }
-  .modal-content:hover .fa-adjust {
-    color: #0d6efd !important;
-  }
-  .modal-content:hover .fa-thumbs-up {
-    color: #0d6efd !important;
-  }
-  /* edit */
-  .edit-button {
-    opacity: 0;
-  }
-  .edit-button:hover {
-    opacity: 1;
-  }
-  .edit-heading:hover .edit-button {
-    opacity: 1;
-  }
-  /* scrollbar */
-  .scrollbar:hover {
-    overflow: auto !important;
-  }
-  /* sponsor */
-  .sponsor-icon {
-    opacity: 0;
-  }
-  .dropdown-item:hover .sponsor-icon {
-    opacity: 1;
-  }
-  /* popover */
-  .pop-avatar {
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
-  .chat-box {
-    border: 0 !important;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  /* stories */
-  .story:hover {
-    opacity: 0.8;
-  }
-  .pointer {
-    cursor: pointer;
-  }
-  /* comment */
-  .post__comment .accordion-button::after {
-    margin-left: 0 !important;
-    display: none !important;
-  }
-  .post__comment .accordion-button:hover {
-    background: transparent !important;
-    border-color: transparent !important;
-  }
-  .post__comment .accordion-button:not(.collapsed) {
-    background: transparent !important;
-  }
-  .post__comment .accordion-button:not(.collapsed) {
-    box-shadow: none !important;
-  }
-  
-  
+.fs-0 {
+  font-size: 4rem;
+}
 
-  .floating-image-container {
-    position: absolute;
-    width: 50px;
-    top: 7%;
-    left: 3%;
-    border-radius: 50%;
-    height: 50px;
-    z-index: 100000;
-    border: 3px solid red;
-    /* Red border */
-    overflow: hidden;
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+/* nav button */
+.nav__btn button:hover {
+  background: #f0f2f5 !important;
+}
+
+.nav__btn button:hover i {
+  color: #0d6efd !important;
+}
+
+.nav__btn-active i {
+  color: #0d6efd !important;
+}
+
+.nav__btn-active {
+  position: relative;
+}
+
+.nav__btn-active:before {
+  content: "";
+  position: absolute;
+  bottom: -4.5px;
+  left: 0;
+  transform: translate(0, 4.5px);
+  width: 100%;
+  height: 3px;
+  border-bottom: 3px solid #0d6efd !important;
+}
+
+/* dropdown */
+.dropdown-item:active {
+  background-color: #d5d5d5 !important;
+}
+
+/* chat box */
+.modal-content:hover .fa-phone-alt {
+  color: #0d6efd !important;
+}
+
+.modal-content:hover .fa-video {
+  color: #0d6efd !important;
+}
+
+.modal-content:hover .fa-file-image {
+  color: #0d6efd !important;
+}
+
+.modal-content:hover .fa-plus-circle {
+  color: #0d6efd !important;
+}
+
+.modal-content:hover .fa-portrait {
+  color: #0d6efd !important;
+}
+
+.modal-content:hover .fa-adjust {
+  color: #0d6efd !important;
+}
+
+.modal-content:hover .fa-thumbs-up {
+  color: #0d6efd !important;
+}
+
+/* edit */
+.edit-button {
+  opacity: 0;
+}
+
+.edit-button:hover {
+  opacity: 1;
+}
+
+.edit-heading:hover .edit-button {
+  opacity: 1;
+}
+
+/* scrollbar */
+.scrollbar:hover {
+  overflow: auto !important;
+}
+
+/* sponsor */
+.sponsor-icon {
+  opacity: 0;
+}
+
+.dropdown-item:hover .sponsor-icon {
+  opacity: 1;
+}
+
+/* popover */
+.pop-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.chat-box {
+  border: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* stories */
+.story:hover {
+  opacity: 0.8;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* comment */
+.post__comment .accordion-button::after {
+  margin-left: 0 !important;
+  display: none !important;
+}
+
+.post__comment .accordion-button:hover {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+.post__comment .accordion-button:not(.collapsed) {
+  background: transparent !important;
+}
+
+.post__comment .accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+
+
+.floating-image-container {
+  position: absolute;
+  width: 50px;
+  top: 7%;
+  left: 3%;
+  border-radius: 50%;
+  height: 50px;
+  z-index: 100000;
+  border: 3px solid red;
+  /* Red border */
+  overflow: hidden;
 }
 
 .floating-image {
-    position: absolute;
+  position: absolute;
 
-    z-index: 100000;
+  z-index: 100000;
 
-    width: 100%;
-    /* 100% width of the container */
-    height: 100%;
-    /* 100% height of the container */
-    object-fit: cover;
+  width: 100%;
+  /* 100% width of the container */
+  height: 100%;
+  /* 100% height of the container */
+  object-fit: cover;
 }
 
 .owl-carousel {
-    position: relative;
+  position: relative;
 }
 
 .owl-carousel .owl-nav {
-    position: absolute;
-    top: 37%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
 .owl-carousel .owl-nav .owl-prev i,
 .owl-carousel .owl-nav .owl-next i {
-    font-size: 30px;
-    /* Adjust the arrow size as needed */
-    color: #ff3434;
+  font-size: 30px;
+  /* Adjust the arrow size as needed */
+  color: #ff3434;
 }
 
 .owl-carousel .owl-nav .owl-prev {
-    margin-left: -10px;
+  margin-left: 30px;
+  display: block;
+}
+
+.owl-carousel .owl-nav .owl-prev.disabled {
+  margin-left: 30px;
+  display: none !important;
+}
+
+.owl-carousel .owl-nav .owl-next.disabled {
+
+  display: none !important;
 }
 
 .owl-carousel .owl-nav .owl-next {
-    margin-right: 35px;
+  margin-right: 35px;
 }
 
 .story {
-    position: relative;
-    width: 180px;
-    border-radius: 30px;
+  position: relative;
+  width: 180px;
+  border-radius: 30px;
 }
 
 .story-overlay {
-    position: absolute;
-    bottom: 10px;
-    /* Adjust the distance from the bottom */
-    left: 10px;
-    border-radius: 12px;
-    /* margin-left:10px; */
-    /* Adjust the distance from the left */
-    color: white;
-    /* Text color */
+  position: absolute;
+  bottom: 10px;
+  /* Adjust the distance from the bottom */
+  left: 10px;
+  border-radius: 12px;
+  /* margin-left:10px; */
+  /* Adjust the distance from the left */
+  color: white;
+  /* Text color */
 }
 
 .story-overlayer {
-    position: absolute;
-    width: 100%;
-    border-radius: 12px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    /* Adjust the distance from the left */
-    color: white;
-    /* Text color */
+  position: absolute;
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  /* Adjust the distance from the left */
+  color: white;
+  /* Text color */
 }
 
 .story-name {
-    width: auto;
-    font-size: 16px;
-    /* Adjust the font size */
-    font-weight: bold;
-    /* Adjust font weight if needed */
-    /* background: rgba(0, 0, 0, 0.5); */
+  width: auto;
+  font-size: 16px;
+  /* Adjust the font size */
+  font-weight: bold;
+  /* Adjust font weight if needed */
+  /* background: rgba(0, 0, 0, 0.5); */
 
-    /* padding: 5px 10px; */
-    /* Adjust padding */
-    border-radius: 5px;
-    /* Adjust border radius */
+  /* padding: 5px 10px; */
+  /* Adjust padding */
+  border-radius: 5px;
+  /* Adjust border radius */
 }
 
 
@@ -218,85 +257,281 @@
 
 
 .divtabita span {
-    font-size: 1rem;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-weight: 600;
-    line-height: 1.3333;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 600;
+  line-height: 1.3333;
 }
 
 .divtabita.active-tab span {
-    border-bottom: none;
-    background: none;
-    color: #ff3434;
+  border-bottom: none;
+  background: none;
+  color: #ff3434;
 
 
 }
 
 .divtabita.active-tab div {
-    background-color: #ff3434;
+  background-color: #ff3434;
 }
 
 .divtabita:not(.active-tab):hover span {
-    border-radius: 10px;
-    width: 100%;
-    background-color: lightgray;
-    cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  background-color: lightgray;
+  cursor: pointer;
 }
 
 .divtabita:hover {
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .divtabita:not(.active-tab):hover {
 
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 
 .tabita {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 
 section.px-7 {
-    padding-right: 4rem!important;
+  padding-right: 4rem !important;
 
-    padding-left: 4rem!important
+  padding-left: 4rem !important
 }
 
-.homepage-9 .sec-title h2{
+.homepage-9 .sec-title h2 {
   margin-bottom: .1rem;
   font-size: 1.8rem;
 }
 
 .sec-title a {
-  color:#ff3434;
+  color: #ff3434;
   font-size: 16px;
 }
-.owl-stuff .owl-prev{
-  top:15% !important;
+
+.owl-stuff .owl-prev {
+  top: 15% !important;
 }
-.owl-stuff .owl-next{
-  top:15% !important;
+
+.owl-stuff .owl-next {
+  top: 15% !important;
 }
+
 @media (max-width: 600px) {
- .owl-stuff .owl-stage{
+  .owl-stuff .owl-stage {
     padding-left: 0px !important;
   }
+
   .owl-stuff .owl-carousel .owl-item:first-child {
-      margin-left: 0 !important; /* Remove the left margin for the first item */
+    margin-left: 0 !important;
+    /* Remove the left margin for the first item */
   }
-  .owl-stuff .owl-item.active{
-    max-width: 300px  !important;
+
+  .owl-stuff .owl-item.active {
+    max-width: 300px !important;
+  }
+
+  .owl-stuff .owl-prev {
+    left: 0px !important;
+  }
+}
+
+
+#myModalIframe2 .modal-content {
+  height: auto;
+  /* Allow the modal to grow with content */
+  max-height: calc(80vh);
+  /* Set max height to 80% of viewport height */
+  overflow: hidden;
+}
+
+#myModalIframe2 .carousel-lg {
+  border-radius: .3rem;
+  min-height: 450px;
+  max-height: 808px;
+  max-width: 808px;
+  aspect-ratio: 1 / 1;
+  flex-basis: 808px;
+}
+
+#myModalIframe2 .modal-header {
+  border-bottom: 1px solid rgba(205, 205, 205, 0.4);
+}
+
+@media (max-width: 992px) {
+  #myModalIframe2 .modal-header {
+    border-bottom: none;
+  }
+
+  #myModalIframe2 .modal-content {
+    height: auto;
+    /* Allow the modal to grow with content */
+    max-height: none;
+    /* Set max height to 80% of viewport height */
+    overflow: visible;
   }
   
-  .owl-stuff .owl-prev{
-    left:0px !important;
+}
+
+.carousel-lg .owl-carousel {
+  position: relative;
+}
+
+#myModalIframe2 .carousel-lg .owl-carousel .owl-item {
+  position: relative;
+  /* This allows us to position the img within the item */
+  width: 808px !important;
+  height: calc(80vh);
+  overflow: hidden;
+  /* Hide any overflow */
+}
+.carousel-lg .reel>div>div, .carousel-lg .reel>div{
+  left: 0;
+  width: 808px !important;
+  height: calc(80vh) !important;
+  position: static;
+  padding-bottom: 0px !important;
+}
+
+
+
+
+#myModalIframe2 .carousel-lg .owl-carousel .owl-item img {
+  position: absolute;
+  /* Position absolute to center the image */
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  min-width: 100%;
+  /* Ensures the image covers the full width */
+  min-height: 100%;
+  /* Ensures the image covers the full height */
+  transform: translate(-50%, -50%);
+  /* Center the image */
+
+  object-fit: cover;
+}
+
+#myModalIframe2 .close {
+  position: fixed;
+  /* Fix the position */
+  top: 20px;
+  /* Distance from the top of the screen */
+  right: 20px;
+  /* Distance from the right of the screen */
+  z-index: 1050;
+  /* Ensure it is above other elements */
+  background-color: transparent;
+  /* Make the background transparent */
+  border: none;
+  /* Remove any border */
+  font-size: 50px;
+  /* Adjust size as needed */
+  color: #fff;
+  /* Change color as needed */
+
+}
+
+/* Optional: Style for hover effect */
+.close:hover {
+  color: red;
+  /* Change color on hover */
+}
+.carousel-lg .reel {
+  position: relative;
+  padding-bottom: 0%;
+  height: calc(80vh);
+  width: 808px;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+@media (max-width: 1200px) {
+  #myModalIframe2 .carousel-lg {
+    border-radius: .3rem;
+    min-height: 750px;
+    max-height: 750px;
+    max-width: 750px;
+    aspect-ratio: 1 / 1;
+    flex-basis: 750px;
   }
+
+  #myModalIframe2 .carousel-lg .owl-carousel .owl-item {
+    position: relative;
+    /* This allows us to position the img within the item */
+    width: 750px !important;
+    height: calc(80vh);
+    overflow: hidden;
+    /* Hide any overflow */
+  }
+  .carousel-lg .reel>div>div, .carousel-lg .reel>div{
+    
+    width: 750px !important;
+  }
+  .carousel-lg .reel {
+    width: 750px;
+  }
+}
+
+@media (max-width: 1140px) {
+  #myModalIframe2 .carousel-lg {
+    border-radius: .3rem;
+    min-height: 650px;
+    max-height: 650px;
+    max-width: 650px;
+    aspect-ratio: 1 / 1;
+    flex-basis: 650px;
+  }
+
+  #myModalIframe2 .carousel-lg .owl-carousel .owl-item {
+    position: relative;
+    /* This allows us to position the img within the item */
+    width: 650px !important;
+    height: calc(80vh);
+    overflow: hidden;
+    /* Hide any overflow */
+  }
+  .carousel-lg .reel>div>div, .carousel-lg .reel>div{
+    
+    width: 650px !important;
+  }
+
+
+.carousel-lg .reel {
+    width: 650px;
+  }
+}
+.carousel-sm .reel{
+  max-height: 600px;
+  overflow: hidden;
+  
+}
+.carousel-sm .reel>div>div{
+  width: 100%;
+  margin: auto; 
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  /* Make iframe height respect the modal’s height */
+  max-width: 100%;
+  /* Ensure iframe width adjusts accordingly */
+  object-fit: contain;
+  /* Ensure the iframe scales without distorting the content */
 }
