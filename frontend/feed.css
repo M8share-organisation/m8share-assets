@@ -113,3 +113,190 @@
   }
   
   
+
+  .floating-image-container {
+    position: absolute;
+    width: 50px;
+    top: 7%;
+    left: 3%;
+    border-radius: 50%;
+    height: 50px;
+    z-index: 100000;
+    border: 3px solid red;
+    /* Red border */
+    overflow: hidden;
+}
+
+.floating-image {
+    position: absolute;
+
+    z-index: 100000;
+
+    width: 100%;
+    /* 100% width of the container */
+    height: 100%;
+    /* 100% height of the container */
+    object-fit: cover;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 37%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.owl-carousel .owl-nav .owl-prev i,
+.owl-carousel .owl-nav .owl-next i {
+    font-size: 30px;
+    /* Adjust the arrow size as needed */
+    color: #ff3434;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    margin-left: -10px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    margin-right: 35px;
+}
+
+.story {
+    position: relative;
+    width: 180px;
+    border-radius: 30px;
+}
+
+.story-overlay {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust the distance from the bottom */
+    left: 10px;
+    border-radius: 12px;
+    /* margin-left:10px; */
+    /* Adjust the distance from the left */
+    color: white;
+    /* Text color */
+}
+
+.story-overlayer {
+    position: absolute;
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* Adjust the distance from the left */
+    color: white;
+    /* Text color */
+}
+
+.story-name {
+    width: auto;
+    font-size: 16px;
+    /* Adjust the font size */
+    font-weight: bold;
+    /* Adjust font weight if needed */
+    /* background: rgba(0, 0, 0, 0.5); */
+
+    /* padding: 5px 10px; */
+    /* Adjust padding */
+    border-radius: 5px;
+    /* Adjust border radius */
+}
+
+
+
+
+
+
+
+
+.divtabita span {
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 600;
+    line-height: 1.3333;
+}
+
+.divtabita.active-tab span {
+    border-bottom: none;
+    background: none;
+    color: #ff3434;
+
+
+}
+
+.divtabita.active-tab div {
+    background-color: #ff3434;
+}
+
+.divtabita:not(.active-tab):hover span {
+    border-radius: 10px;
+    width: 100%;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.divtabita:hover {
+
+    cursor: pointer;
+}
+
+.divtabita:not(.active-tab):hover {
+
+
+    cursor: pointer;
+}
+
+
+.tabita {
+    margin-top: 10px;
+}
+
+
+section.px-7 {
+    padding-right: 4rem!important;
+
+    padding-left: 4rem!important
+}
+
+.homepage-9 .sec-title h2{
+  margin-bottom: .1rem;
+  font-size: 1.8rem;
+}
+
+.sec-title a {
+  color:#ff3434;
+  font-size: 16px;
+}
+.owl-stuff .owl-prev{
+  top:15% !important;
+}
+.owl-stuff .owl-next{
+  top:15% !important;
+}
+@media (max-width: 600px) {
+ .owl-stuff .owl-stage{
+    padding-left: 0px !important;
+  }
+  .owl-stuff .owl-carousel .owl-item:first-child {
+      margin-left: 0 !important; /* Remove the left margin for the first item */
+  }
+  .owl-stuff .owl-item.active{
+    max-width: 300px  !important;
+  }
+  
+  .owl-stuff .owl-prev{
+    left:0px !important;
+  }
+}

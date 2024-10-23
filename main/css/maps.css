@@ -2448,6 +2448,17 @@ screen and (max-height:300px) {
     max-width: 550px;
 }
 
+.homepage-9 .sec-title.text-left p {
+    margin-top: 13px;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    max-width: 550px;
+}
+
 .homepage-9 .portfolio .homes-tag.sale {
     background: rgba(74, 74, 76, 0.7) !important;
 }
