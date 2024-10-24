@@ -348,24 +348,62 @@ section.px-7 {
 
 
 #myModalIframe2 .modal-content {
-  height: auto;
+  height: 100%;
   /* Allow the modal to grow with content */
-  max-height: calc(80vh);
+
   /* Set max height to 80% of viewport height */
   overflow: hidden;
 }
 
 #myModalIframe2 .carousel-lg {
-  border-radius: .3rem;
-  min-height: 450px;
-  max-height: 808px;
-  max-width: 808px;
-  aspect-ratio: 1 / 1;
-  flex-basis: 808px;
+  flex-grow: 1;
+  display: inline-block;
+  /* Takes remaining width */
+  max-width: calc(100% - 400px);
+  /* Subtract the fixed width of the right side */
+  height: 100%;
+  /* Full height of modal */
+  max-height: 84vh;
+}
+#myModalIframe2 .carousel-sm {
+  max-width: 400px;
+ flex: 0 0 auto; /* Prevent shrinking */
+    max-height: 400px; /* Fixed height for the image container */
+    overflow: hidden; /* Hide overflow */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center images */
+    align-items: center; /* Center images vertically */
 }
 
 #myModalIframe2 .modal-header {
   border-bottom: 1px solid rgba(205, 205, 205, 0.4);
+}
+
+#myModalIframe2 .carousel-lg .owl-carousel .owl-item {
+  height: 100%;
+}
+
+.modal-dialog {
+  max-width: 90% !important;
+  /* Make the modal wider */
+  height: auto;
+  margin: 0; /* Remove default margins */
+  /* Set the modal height */
+}
+
+
+#myModalIframe2 .modal-content {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  /* Full height of the modal */
+}
+/* Ensuring the modal is always centered */
+.modal.fade .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full screen modal for proper centering */
 }
 
 @media (max-width: 992px) {
@@ -375,52 +413,46 @@ section.px-7 {
 
   #myModalIframe2 .modal-content {
     height: auto;
-    /* Allow the modal to grow with content */
-    max-height: none;
-    /* Set max height to 80% of viewport height */
-    overflow: visible;
+    width:auto;
+  }
+  .modal-dialog {
+    max-width: 100% !important;
+   
   }
   
+
 }
 
 .carousel-lg .owl-carousel {
   position: relative;
 }
 
-#myModalIframe2 .carousel-lg .owl-carousel .owl-item {
-  position: relative;
-  /* This allows us to position the img within the item */
-  width: 808px !important;
-  height: calc(80vh);
-  overflow: hidden;
-  /* Hide any overflow */
-}
-.carousel-lg .reel>div>div, .carousel-lg .reel>div{
+.carousel-lg .reel>div>div, .carousel-lg .reel>div {
   left: 0;
-  width: 808px !important;
+  width: 300px !important;
   height: calc(80vh) !important;
   position: static;
   padding-bottom: 0px !important;
 }
 
 
+.post-info {
+  width: 400px;
+  /* Fixed width for the right side */
+  
+  /* Optional: space between content */
+  overflow-y: auto;
+  
+  height: 100%;
+  
+}
 
 
 #myModalIframe2 .carousel-lg .owl-carousel .owl-item img {
-  position: absolute;
-  /* Position absolute to center the image */
-  top: 50%;
-  /* Center vertically */
-  left: 50%;
-  /* Center horizontally */
-  min-width: 100%;
-  /* Ensures the image covers the full width */
-  min-height: 100%;
-  /* Ensures the image covers the full height */
-  transform: translate(-50%, -50%);
-  /* Center the image */
-
-  object-fit: cover;
+  width: 100%; /* Make the image take the full width */
+  height: 100%; /* Make the image take the full height */
+  object-fit: contain; 
+  max-height: 84vh;
 }
 
 #myModalIframe2 .close {
@@ -442,96 +474,43 @@ section.px-7 {
   /* Change color as needed */
 
 }
-
+#myModalIframe2 h1{
+  
+  text-align: left!important;
+  line-height: 1.2;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  position: relative;
+  color: #444;
+  font-weight: 500;
+}
 /* Optional: Style for hover effect */
 .close:hover {
   color: red;
   /* Change color on hover */
 }
-.carousel-lg .reel {
-  position: relative;
-  padding-bottom: 0%;
-  height: calc(80vh);
-  width: 808px;
-  overflow: hidden;
-  max-height: 100%;
-}
-
-@media (max-width: 1200px) {
-  #myModalIframe2 .carousel-lg {
-    border-radius: .3rem;
-    min-height: 750px;
-    max-height: 750px;
-    max-width: 750px;
-    aspect-ratio: 1 / 1;
-    flex-basis: 750px;
-  }
-
-  #myModalIframe2 .carousel-lg .owl-carousel .owl-item {
-    position: relative;
-    /* This allows us to position the img within the item */
-    width: 750px !important;
-    height: calc(80vh);
-    overflow: hidden;
-    /* Hide any overflow */
-  }
-  .carousel-lg .reel>div>div, .carousel-lg .reel>div{
-    
-    width: 750px !important;
-  }
-  .carousel-lg .reel {
-    width: 750px;
-  }
-}
-
-@media (max-width: 1140px) {
-  #myModalIframe2 .carousel-lg {
-    border-radius: .3rem;
-    min-height: 650px;
-    max-height: 650px;
-    max-width: 650px;
-    aspect-ratio: 1 / 1;
-    flex-basis: 650px;
-  }
-
-  #myModalIframe2 .carousel-lg .owl-carousel .owl-item {
-    position: relative;
-    /* This allows us to position the img within the item */
-    width: 650px !important;
-    height: calc(80vh);
-    overflow: hidden;
-    /* Hide any overflow */
-  }
-  .carousel-lg .reel>div>div, .carousel-lg .reel>div{
-    
-    width: 650px !important;
-  }
-
 
 .carousel-lg .reel {
-    width: 650px;
-  }
+  flex: 1; /* Take the remaining space */
+  max-width: 100%; /* Adjust as needed */
+  overflow: hidden; /* Hide any overflow */
+  position: relative; /* For aspect ratio */
 }
-.carousel-sm .reel{
-  max-height: 600px;
-  overflow: hidden;
+
+
+
+.carousel-lg iframe {
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the left */
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  border: none; /* Remove border */
+  max-height: 84vh; /* Ensure iframe doesn’t exceed 80% of viewport */
+  min-height: 400px; /* Minimum height for the iframe */
+  max-width: calc(100%-400px);
   
 }
-.carousel-sm .reel>div>div{
-  width: 100%;
-  margin: auto; 
-}
 
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
-  /* Make iframe height respect the modal’s height */
-  max-width: 100%;
-  /* Ensure iframe width adjusts accordingly */
-  object-fit: contain;
-  /* Ensure the iframe scales without distorting the content */
-}
+
