@@ -455,25 +455,7 @@ section.px-7 {
   max-height: 84vh;
 }
 
-#myModalIframe2 .close {
-  position: fixed;
-  /* Fix the position */
-  top: 20px;
-  /* Distance from the top of the screen */
-  right: 20px;
-  /* Distance from the right of the screen */
-  z-index: 1050;
-  /* Ensure it is above other elements */
-  background-color: transparent;
-  /* Make the background transparent */
-  border: none;
-  /* Remove any border */
-  font-size: 50px;
-  /* Adjust size as needed */
-  color: #fff;
-  /* Change color as needed */
 
-}
 #myModalIframe2 h1{
   
   text-align: left!important;
